@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.rnkrsoft.skeleton4j</groupId>
+        <artifactId>skeleton4j-community</artifactId>
+        <version>1.0.3</version>
+    </parent>
+    <artifactId>skeleton4j-benchmark-heap</artifactId>
+    <name>skeleton4j 基准测试堆,用于检测Skeleton4j的基本特性</name>
+    <packaging>pom</packaging>
+    <properties>
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+    <modules>
+        <module>skeleton4j-benchmark-common</module>
+        <module>skeleton4j-benchmark-homepage</module>
+        <module>skeleton4j-benchmark-toolbar</module>
+        <module>skeleton4j-benchmark-query</module>
+        <module>skeleton4j-benchmark-readable</module>
+        <module>skeleton4j-benchmark-writeable</module>
+        <module>skeleton4j-benchmark-menu</module>
+        <module>skeleton4j-benchmark-imp</module>
+        <module>skeleton4j-benchmark-exp</module>
+        <module>skeleton4j-benchmark-msgbox</module>
+        <module>skeleton4j-benchmark-dialogbox</module>
+        <module>skeleton4j-benchmark-group</module>
+        <module>skeleton4j-benchmark-upload</module>
+        <module>skeleton4j-benchmark-download</module>
+        <module>skeleton4j-benchmark-formtable-simple</module>
+        <module>skeleton4j-benchmark-formtable-modal</module>
+        <module>skeleton4j-benchmark-event</module>
+        <module>skeleton4j-benchmark-cascade</module>
+        <module>skeleton4j-benchmark-cascade-event</module>
+        <module>skeleton4j-benchmark-authority</module>
+        <module>skeleton4j-benchmark-resource</module>
+        <module>skeleton4j-benchmark-merged</module>
+    </modules>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.rnkrsoft.skeleton4j</groupId>
+                <artifactId>skeleton4j-dependencies</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
